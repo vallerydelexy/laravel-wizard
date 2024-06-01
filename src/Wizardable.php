@@ -4,7 +4,6 @@ namespace Ycs77\LaravelWizard;
 
 use Closure;
 use Illuminate\Http\Request;
-use Ycs77\LaravelWizard\Exceptions\StepNotFoundException;
 
 trait Wizardable
 {
@@ -316,8 +315,6 @@ trait Wizardable
      * @param  \Illuminate\Http\Request  $request
      * @param  string|null  $slug
      * @return \Ycs77\LaravelWizard\Step
-     *
-     * @throws \Ycs77\LaravelWizard\Exceptions\StepNotFoundException
      */
     protected function getWizardStep(Request $request, string $slug = null)
     {
@@ -330,7 +327,7 @@ trait Wizardable
         }
 
         if (is_null($step)) {
-            throw new StepNotFoundException($slug, $this->wizard, static::class);
+            abort(404);
         }
 
         $this->wizard()->stepRepo()->setCurrentIndex($step->index());

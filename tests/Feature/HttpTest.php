@@ -178,19 +178,10 @@ class HttpTest extends TestCase
         ]);
     }
 
-    public function testThrowStepNotFoundException()
+    public function testStepNotFound()
     {
-        $this->app['config']->set('app.debug', false);
-
         $response = $this->get('/wizard/test/step-not-found');
         $response->assertStatus(404);
-    }
-
-    public function testThrowStepNotFoundExceptionFromDebugMode()
-    {
-        $response = $this->get('/wizard/test/step-not-found');
-        $response->assertStatus(500);
-        $response->assertSee('Step [step-not-found] is not found to Test wizard.');
     }
 
     public function testWizardStepNotEquialToLastProcessedStep()
