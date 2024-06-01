@@ -12,26 +12,12 @@ use Ycs77\LaravelWizard\WizardServiceProvider;
 class TestCase extends OrchestraTestCase
 {
     /**
-     * Setup the test environment.
-     *
-     * @return void
-     */
-    protected function setUp(): void
-    {
-        $this->setUpTheTestEnvironment();
-
-        $this->app['view']->addLocation(__DIR__.'/Stubs/views');
-
-        $this->loadMigrationsFrom(__DIR__.'/Stubs/database/migrations');
-    }
-
-    /**
      * Define environment setup.
      *
      * @param  \Illuminate\Foundation\Application  $app
      * @return void
      */
-    protected function getEnvironmentSetUp($app)
+    protected function defineEnvironment($app)
     {
         // App
         $app['config']->set('app.debug', true);
@@ -43,6 +29,9 @@ class TestCase extends OrchestraTestCase
 
         // Wizard
         $app['config']->set('wizard', require __DIR__.'/../config/wizard.php');
+
+        // Views
+        $app['view']->addLocation(__DIR__.'/Stubs/views');
     }
 
     /**
@@ -69,6 +58,16 @@ class TestCase extends OrchestraTestCase
         return [
             'Wizard' => WizardFacade::class,
         ];
+    }
+
+    /**
+     * Define database migrations.
+     *
+     * @return void
+     */
+    protected function defineDatabaseMigrations()
+    {
+        $this->loadMigrationsFrom(__DIR__.'/Stubs/database/migrations');
     }
 
     /**
