@@ -51,6 +51,7 @@ A web setup wizard for Laravel application.
  | 2.2.x          | ^5.6\|^6.x\|^7.x | ^7.1.3         |
  | 2.3.x          | >=5.6\|<=9.0     | >=7.1.3\|<=8.2 |
  | 3.x            | >=9.0            | >=8.1          |
+ | 4.x            | >=11.0           | >=8.2          |
 
 ## Install
 
@@ -585,11 +586,11 @@ If you think this package has helped you, please consider [Becoming a sponsor](h
 
 [ico-version]: https://img.shields.io/packagist/v/ycs77/laravel-wizard?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square
-[ico-github-action]: https://img.shields.io/github/actions/workflow/status/ycs77/laravel-wizard/tests.yml?branch=3.x&label=tests&style=flat-square
+[ico-github-action]: https://img.shields.io/github/actions/workflow/status/ycs77/laravel-wizard/tests.yml?branch=4.x&label=tests&style=flat-square
 [ico-style-ci]: https://github.styleci.io/repos/190876726/shield?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/ycs77/laravel-wizard?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/ycs77/laravel-wizard
-[link-github-action]: https://github.com/ycs77/laravel-wizard/actions/workflows/tests.yml?query=branch%3A3.x
+[link-github-action]: https://github.com/ycs77/laravel-wizard/actions/workflows/tests.yml?query=branch%3A4.x
 [link-style-ci]: https://github.styleci.io/repos/190876726
 [link-downloads]: https://packagist.org/packages/ycs77/laravel-wizard
