@@ -109,8 +109,7 @@ trait Wizardable
         } else {
             // Form validation.
             if ($this->canValidate($request)) {
-                $this->validate(
-                    $request,
+                $request->validate(
                     $step->rules($request),
                     $step->validateMessages($request),
                     $step->validateAttributes($request)
