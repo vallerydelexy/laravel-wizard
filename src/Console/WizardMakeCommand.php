@@ -69,7 +69,7 @@ class WizardMakeCommand extends Command
         }
 
         $routeText = file_get_contents(__DIR__.'/stubs/routes.stub');
-        $routeText = str_replace('DummyUri', implode('/', $nameAry), $routeText);
+        $routeText = str_replace('DummyUri', '/'.implode('/', $nameAry), $routeText);
         $routeText = str_replace('DummyController', $this->getControllerName().'::class', $routeText);
         $routeText = str_replace('DummyName', implode('.', $nameAry), $routeText);
 
