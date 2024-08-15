@@ -43,19 +43,19 @@ A web setup wizard for Laravel application.
 
 ## Version Compatibility
 
- | Laravel Wizard | Laravel          | PHP            |
- | -------------- | ---------------- | -------------- |
- | 1.0.x          | 5.5              | ^7.0           |
- | 1.1.x          | ^5.6             | ^7.1.3         |
- | 2.0.x,2.1.x    | ^5.6\|^6.x       | ^7.1.3         |
- | 2.2.x          | ^5.6\|^6.x\|^7.x | ^7.1.3         |
- | 2.3.x          | >=5.6\|<=9.0     | >=7.1.3\|<=8.2 |
- | 3.x            | >=9.0            | >=8.1          |
- | 4.x            | >=11.0           | >=8.2          |
+| Laravel Wizard | Laravel              | PHP              |
+| -------------- | -------------------- | ---------------- |
+| 1.0.x          | 5.5                  | ^7.0             |
+| 1.1.x          | ^5.6                 | ^7.1.3           |
+| 2.0.x,2.1.x    | ^5.6 \| ^6.x         | ^7.1.3           |
+| 2.2.x          | ^5.6 \| ^6.x \| ^7.x | ^7.1.3           |
+| 2.3.x          | >=5.6 \| <=9.0       | >=7.1.3 \| <=8.2 |
+| 3.x            | >=9.0                | >=8.1            |
+| 4.x            | >=11.0               | >=8.2            |
 
-## Install
+## Installation
 
-Via Composer:
+Install the package via composer:
 
 ```bash
 composer require ycs77/laravel-wizard
