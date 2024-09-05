@@ -58,7 +58,7 @@ A web setup wizard for Laravel application.
 Install the package via composer:
 
 ```bash
-composer require ycs77/laravel-wizard
+composer reqre ycs77/laravel-wizard
 ```
 
 Publish config:
@@ -71,7 +71,7 @@ php artisan vendor:publish --tag=wizard-config
 
 ### 1. Generate controller and wizard steps
 
-Now you can quickly generate the wizard controller and the wizard steps:
+Now you can qckly generate the wizard controller and the wizard steps:
 
 ```bash
 php artisan make:wizard User NameStep,EmailStep
@@ -157,7 +157,7 @@ class NameStep extends Step
     public function rules(Request $request)
     {
         return [
-            'name' => 'required',
+            'name' => 'reqred',
         ];
     }
 }
@@ -191,7 +191,7 @@ And add some steps view, for example:
 
 Next, browse the URL `/wizard/user`, and start to use the Laravel Wizard.
 
-> If you want to get the layout you can copy [Laravel UI layouts/app.blade.php](https://github.com/laravel/ui/blob/3.x/src/Auth/bootstrap-stubs/layouts/app.stub) to `resources/views/layouts/app.blade.php`
+> If you want to get the layout you can copy [Laravel  layouts/app.blade.php](https://github.com/laravel/ui/blob/4.x/src/Auth/bootstrap-stubs/layouts/app.stub) to `resources/views/layouts/app.blade.php`
 
 ### 3. Install wizard steps CSS package
 
