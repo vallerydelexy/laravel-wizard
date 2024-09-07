@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Console;
+namespace vallerydelexy\LaravelWizard\Console;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;

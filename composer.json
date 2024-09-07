@@ -1,12 +1,12 @@
 {
-    "name": "ycs77/laravel-wizard",
+    "name": "vallerydelexy/laravel-wizard",
     "description": "A web setup wizard for Laravel application.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Lucas Yang",
-            "email": "yangchenshin77@gmail.com"
+            "name": "rizki aprita",
+            "email": "vallerydelexy@gmail.com"
         }
     ],
     "keywords": [
@@ -17,7 +17,7 @@
         "component",
         "plugin"
     ],
-    "homepage": "https://github.com/ycs77/laravel-wizard",
+    "homepage": "https://github.com/vallerydelexy/laravel-wizard",
     "require": {
         "php": ">=8.2",
         "laravel/framework": ">=11.0"
@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Ycs77\\LaravelWizard\\": "src"
+            "vallerydelexy\\LaravelWizard\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ycs77\\LaravelWizard\\Test\\": "tests"
+            "vallerydelexy\\LaravelWizard\\Test\\": "tests"
         },
         "files": [
             "tests/utils.php"
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Ycs77\\LaravelWizard\\WizardServiceProvider"
+                "vallerydelexy\\LaravelWizard\\WizardServiceProvider"
             ],
             "aliases": {
-                "Wizard": "Ycs77\\LaravelWizard\\Facades\\Wizard"
+                "Wizard": "vallerydelexy\\LaravelWizard\\Facades\\Wizard"
             }
         }
     },

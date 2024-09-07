@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Contracts;
+namespace vallerydelexy\LaravelWizard\Contracts;
 
 interface StepRepository
 {
@@ -8,7 +8,7 @@ interface StepRepository
      * Get step instance.
      *
      * @param  int  $key
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function get(int $key);
 
@@ -16,7 +16,7 @@ interface StepRepository
      * Find step by slug.
      *
      * @param  string  $slug
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function find(string $slug);
 
@@ -39,7 +39,7 @@ interface StepRepository
     /**
      * Push the steps to step repository.
      *
-     * @param  array|\Ycs77\LaravelWizard\Step|string  $stepClass
+     * @param  array|\vallerydelexy\LaravelWizard\Step|string  $stepClass
      * @param  int|null  $index
      * @return self
      */
@@ -69,8 +69,8 @@ interface StepRepository
     /**
      * Get or set the current step.
      *
-     * @param  \Ycs77\LaravelWizard\Step|null  $step
-     * @return \Ycs77\LaravelWizard\Step|null $step
+     * @param  \vallerydelexy\LaravelWizard\Step|null  $step
+     * @return \vallerydelexy\LaravelWizard\Step|null $step
      */
     public function current($step = null);
 
@@ -85,28 +85,28 @@ interface StepRepository
     /**
      * Get first step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function first();
 
     /**
      * Get last step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function last();
 
     /**
      * Get prev step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function prev();
 
     /**
      * Get next step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function next();
 
@@ -135,14 +135,14 @@ interface StepRepository
     /**
      * Get prev step slug.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function prevSlug();
 
     /**
      * Get next step slug.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function nextSlug();
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Stubs;
+namespace vallerydelexy\LaravelWizard\Test\Stubs;
 
 use Illuminate\Http\Request;
-use Ycs77\LaravelWizard\Step;
+use vallerydelexy\LaravelWizard\Step;
 
 class StepStub extends Step
 {

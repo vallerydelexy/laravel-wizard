@@ -1,18 +1,18 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Unit;
+namespace vallerydelexy\LaravelWizard\Test\Unit;
 
-use Ycs77\LaravelWizard\StepRepository;
-use Ycs77\LaravelWizard\Test\Stubs\PostStepStub;
-use Ycs77\LaravelWizard\Test\TestCase;
-use Ycs77\LaravelWizard\Wizard;
+use vallerydelexy\LaravelWizard\StepRepository;
+use vallerydelexy\LaravelWizard\Test\Stubs\PostStepStub;
+use vallerydelexy\LaravelWizard\Test\TestCase;
+use vallerydelexy\LaravelWizard\Wizard;
 
 class WizardTest extends TestCase
 {
     /**
      * The wizard instance.
      *
-     * @var \Ycs77\LaravelWizard\Wizard|\Mockery\MockInterface
+     * @var \vallerydelexy\LaravelWizard\Wizard|\Mockery\MockInterface
      */
     protected $wizard;
 

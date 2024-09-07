@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Console;
+namespace vallerydelexy\LaravelWizard\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -60,10 +60,10 @@ class WizardMakeCommand extends Command
             );
         }
 
-        if (! Str::contains($routesText, 'use Ycs77\LaravelWizard\Facades\Wizard;')) {
+        if (! Str::contains($routesText, 'use vallerydelexy\LaravelWizard\Facades\Wizard;')) {
             $routesText = str_replace(
                 "use Illuminate\Support\Facades\Route;",
-                'use Illuminate\Support\Facades\Route;'."\n".'use Ycs77\LaravelWizard\Facades\Wizard;',
+                'use Illuminate\Support\Facades\Route;'."\n".'use vallerydelexy\LaravelWizard\Facades\Wizard;',
                 $routesText
             );
         }

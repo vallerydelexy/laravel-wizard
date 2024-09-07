@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard;
+namespace vallerydelexy\LaravelWizard;
 
 use Illuminate\Foundation\Application;
 
@@ -31,7 +31,7 @@ class WizardFactory
      * @param  string  $title
      * @param  array|string  $steps
      * @param  array  $options
-     * @return \Ycs77\LaravelWizard\Wizard
+     * @return \vallerydelexy\LaravelWizard\Wizard
      */
     public function make(string $name, string $title, $steps, $options = [])
     {

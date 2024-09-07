@@ -1,12 +1,12 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Stubs;
+namespace vallerydelexy\LaravelWizard\Test\Stubs;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;
-use Ycs77\LaravelWizard\Wizardable;
+use vallerydelexy\LaravelWizard\Wizardable;
 
 class WizardControllerStub extends Controller
 {

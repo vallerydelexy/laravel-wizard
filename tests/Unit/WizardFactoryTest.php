@@ -1,12 +1,12 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Unit;
+namespace vallerydelexy\LaravelWizard\Test\Unit;
 
-use Ycs77\LaravelWizard\Contracts\CacheStore;
-use Ycs77\LaravelWizard\StepRepository;
-use Ycs77\LaravelWizard\Test\Stubs\UserStepStub;
-use Ycs77\LaravelWizard\Test\TestCase;
-use Ycs77\LaravelWizard\WizardFactory;
+use vallerydelexy\LaravelWizard\Contracts\CacheStore;
+use vallerydelexy\LaravelWizard\StepRepository;
+use vallerydelexy\LaravelWizard\Test\Stubs\UserStepStub;
+use vallerydelexy\LaravelWizard\Test\TestCase;
+use vallerydelexy\LaravelWizard\WizardFactory;
 
 class WizardFactoryTest extends TestCase
 {

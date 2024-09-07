@@ -3,7 +3,7 @@
 namespace DummyNamespace;
 
 use Illuminate\Http\Request;
-use Ycs77\LaravelWizard\Step;
+use vallerydelexy\LaravelWizard\Step;
 
 class DummyClass extends Step
 {

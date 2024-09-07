@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Contracts;
+namespace vallerydelexy\LaravelWizard\Contracts;
 
 interface CacheStore
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Facades;
+namespace vallerydelexy\LaravelWizard\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Ycs77\LaravelWizard\WizardFactory
+ * @see \vallerydelexy\LaravelWizard\WizardFactory
  */
 class Wizard extends Facade
 {

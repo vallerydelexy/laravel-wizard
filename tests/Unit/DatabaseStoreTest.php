@@ -1,15 +1,15 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Unit;
+namespace vallerydelexy\LaravelWizard\Test\Unit;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Ycs77\LaravelWizard\Cache\CachedFile;
-use Ycs77\LaravelWizard\Cache\CachedFileSerializer;
-use Ycs77\LaravelWizard\Cache\DatabaseStore;
-use Ycs77\LaravelWizard\Test\Concerns\CachedFileTesting;
-use Ycs77\LaravelWizard\Test\TestCase;
+use vallerydelexy\LaravelWizard\Cache\CachedFile;
+use vallerydelexy\LaravelWizard\Cache\CachedFileSerializer;
+use vallerydelexy\LaravelWizard\Cache\DatabaseStore;
+use vallerydelexy\LaravelWizard\Test\Concerns\CachedFileTesting;
+use vallerydelexy\LaravelWizard\Test\TestCase;
 
 class DatabaseStoreTest extends TestCase
 {
@@ -19,7 +19,7 @@ class DatabaseStoreTest extends TestCase
     /**
      * The wizard store instance.
      *
-     * @var \Ycs77\LaravelWizard\Cache\DatabaseStore
+     * @var \vallerydelexy\LaravelWizard\Cache\DatabaseStore
      */
     protected $cache;
 

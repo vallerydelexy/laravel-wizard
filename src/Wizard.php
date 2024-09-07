@@ -1,10 +1,10 @@
 <?php
 
-namespace Ycs77\LaravelWizard;
+namespace vallerydelexy\LaravelWizard;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Arr;
-use Ycs77\LaravelWizard\Cache\CacheManager;
+use vallerydelexy\LaravelWizard\Cache\CacheManager;
 
 class Wizard
 {
@@ -18,14 +18,14 @@ class Wizard
     /**
      * The wizard cache manager instance.
      *
-     * @var \Ycs77\LaravelWizard\Contracts\CacheStore
+     * @var \vallerydelexy\LaravelWizard\Contracts\CacheStore
      */
     protected $cache;
 
     /**
      * The step repository instance.
      *
-     * @var \Ycs77\LaravelWizard\StepRepository
+     * @var \vallerydelexy\LaravelWizard\StepRepository
      */
     protected $stepRepo;
 
@@ -111,7 +111,7 @@ class Wizard
     /**
      * Get the wizard cache instance.
      *
-     * @return \Ycs77\LaravelWizard\Contracts\CacheStore
+     * @return \vallerydelexy\LaravelWizard\Contracts\CacheStore
      */
     public function cache()
     {
@@ -121,7 +121,7 @@ class Wizard
     /**
      * Set the wizard cache instance.
      *
-     * @param  \Ycs77\LaravelWizard\Contracts\CacheStore|null  $cache
+     * @param  \vallerydelexy\LaravelWizard\Contracts\CacheStore|null  $cache
      * @return self
      */
     public function setCache($cache = null)
@@ -134,7 +134,7 @@ class Wizard
     /**
      * Get the step repository instance.
      *
-     * @return \Ycs77\LaravelWizard\StepRepository
+     * @return \vallerydelexy\LaravelWizard\StepRepository
      */
     public function stepRepo()
     {
@@ -144,7 +144,7 @@ class Wizard
     /**
      * Set the step repository instance.
      *
-     * @param  \Ycs77\LaravelWizard\StepRepository|null  $stepRepo
+     * @param  \vallerydelexy\LaravelWizard\StepRepository|null  $stepRepo
      * @return self
      */
     public function setStepRepo($stepRepo = null)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Cache;
+namespace vallerydelexy\LaravelWizard\Cache;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Arr;
@@ -10,7 +10,7 @@ class CachedFileSerializer
     /**
      * Serialize the cached file.
      *
-     * @param  \Ycs77\LaravelWizard\Cache\CachedFile|\Illuminate\Http\UploadedFile  $file
+     * @param  \vallerydelexy\LaravelWizard\Cache\CachedFile|\Illuminate\Http\UploadedFile  $file
      * @param  string|null  $filename
      * @param  string|null  $tmpDir
      * @return string
@@ -28,7 +28,7 @@ class CachedFileSerializer
      * Unserialize the cached file.
      *
      * @param  string  $data
-     * @return \Ycs77\LaravelWizard\Cache\CachedFile
+     * @return \vallerydelexy\LaravelWizard\Cache\CachedFile
      */
     public function unserializeFile(string $data)
     {

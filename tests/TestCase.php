@@ -1,13 +1,13 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test;
+namespace vallerydelexy\LaravelWizard\Test;
 
 use Illuminate\Http\UploadedFile;
 use Mockery;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Ycs77\LaravelWizard\Facades\Wizard as WizardFacade;
-use Ycs77\LaravelWizard\Test\Stubs\User;
-use Ycs77\LaravelWizard\WizardServiceProvider;
+use vallerydelexy\LaravelWizard\Facades\Wizard as WizardFacade;
+use vallerydelexy\LaravelWizard\Test\Stubs\User;
+use vallerydelexy\LaravelWizard\WizardServiceProvider;
 
 class TestCase extends OrchestraTestCase
 {

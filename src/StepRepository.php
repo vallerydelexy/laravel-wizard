@@ -1,16 +1,16 @@
 <?php
 
-namespace Ycs77\LaravelWizard;
+namespace vallerydelexy\LaravelWizard;
 
 use Illuminate\Support\Collection;
-use Ycs77\LaravelWizard\Contracts\StepRepository as StepRepositoryContract;
+use vallerydelexy\LaravelWizard\Contracts\StepRepository as StepRepositoryContract;
 
 class StepRepository implements StepRepositoryContract
 {
     /**
      * The wizard instance.
      *
-     * @var \Ycs77\LaravelWizard\Wizard
+     * @var \vallerydelexy\LaravelWizard\Wizard
      */
     protected $wizard;
 
@@ -31,7 +31,7 @@ class StepRepository implements StepRepositoryContract
     /**
      * Create a new steps.
      *
-     * @param  \Ycs77\LaravelWizard\Wizard  $wizard
+     * @param  \vallerydelexy\LaravelWizard\Wizard  $wizard
      * @param  mixed  $steps
      */
     public function __construct(Wizard $wizard)
@@ -44,7 +44,7 @@ class StepRepository implements StepRepositoryContract
      * Get step instance.
      *
      * @param  int  $key
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function get(int $key)
     {
@@ -55,7 +55,7 @@ class StepRepository implements StepRepositoryContract
      * Find step by slug.
      *
      * @param  string  $slug
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function find(string $slug)
     {
@@ -93,7 +93,7 @@ class StepRepository implements StepRepositoryContract
     /**
      * Push the steps to step repository.
      *
-     * @param  array|\Ycs77\LaravelWizard\Step|string  $stepClass
+     * @param  array|\vallerydelexy\LaravelWizard\Step|string  $stepClass
      * @param  int|null  $index
      * @return self
      */
@@ -148,12 +148,12 @@ class StepRepository implements StepRepositoryContract
     /**
      * Get or set the current step.
      *
-     * @param  \Ycs77\LaravelWizard\Step|null  $step
-     * @return \Ycs77\LaravelWizard\Step|null $step
+     * @param  \vallerydelexy\LaravelWizard\Step|null  $step
+     * @return \vallerydelexy\LaravelWizard\Step|null $step
      */
     public function current($step = null)
     {
-        if ($step instanceof \Ycs77\LaravelWizard\Step) {
+        if ($step instanceof \vallerydelexy\LaravelWizard\Step) {
             $this->currentIndex = $step->index();
         }
 
@@ -174,7 +174,7 @@ class StepRepository implements StepRepositoryContract
     /**
      * Get the first step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function first()
     {
@@ -184,7 +184,7 @@ class StepRepository implements StepRepositoryContract
     /**
      * Get the last step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function last()
     {
@@ -194,7 +194,7 @@ class StepRepository implements StepRepositoryContract
     /**
      * Get the previous step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function prev()
     {
@@ -204,7 +204,7 @@ class StepRepository implements StepRepositoryContract
     /**
      * Get the next step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function next()
     {

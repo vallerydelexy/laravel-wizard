@@ -1,13 +1,13 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Feature;
+namespace vallerydelexy\LaravelWizard\Test\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Ycs77\LaravelWizard\Cache\CachedFile;
-use Ycs77\LaravelWizard\Facades\Wizard;
-use Ycs77\LaravelWizard\Test\TestCase;
+use vallerydelexy\LaravelWizard\Cache\CachedFile;
+use vallerydelexy\LaravelWizard\Facades\Wizard;
+use vallerydelexy\LaravelWizard\Test\TestCase;
 
 class HttpTest extends TestCase
 {
@@ -19,7 +19,7 @@ class HttpTest extends TestCase
 
         $this->setWizardRoutes(
             '/wizard/test',
-            '\Ycs77\LaravelWizard\Test\Stubs\WizardControllerStub',
+            '\vallerydelexy\LaravelWizard\Test\Stubs\WizardControllerStub',
             'wizard.test'
         );
 
@@ -142,7 +142,7 @@ class HttpTest extends TestCase
 
         $this->setWizardRoutes(
             '/wizard/upload-file',
-            '\Ycs77\LaravelWizard\Test\Stubs\WizardControllerUploadFileStub',
+            '\vallerydelexy\LaravelWizard\Test\Stubs\WizardControllerUploadFileStub',
             'wizard.upload-file'
         );
 
@@ -262,7 +262,7 @@ class HttpTest extends TestCase
 
         $this->setWizardRoutes(
             '/wizard/can-skip',
-            '\Ycs77\LaravelWizard\Test\Stubs\WizardControllerSkipStub',
+            '\vallerydelexy\LaravelWizard\Test\Stubs\WizardControllerSkipStub',
             'wizard.can-skip'
         );
 
@@ -286,7 +286,7 @@ class HttpTest extends TestCase
 
         $this->setWizardRoutes(
             '/wizard/can-skip',
-            '\Ycs77\LaravelWizard\Test\Stubs\WizardControllerSkipStub',
+            '\vallerydelexy\LaravelWizard\Test\Stubs\WizardControllerSkipStub',
             'wizard.can-skip'
         );
 
@@ -331,7 +331,7 @@ class HttpTest extends TestCase
     {
         $this->setWizardRoutes(
             '/wizard/no-cache',
-            '\Ycs77\LaravelWizard\Test\Stubs\WizardControllerOptionsStub',
+            '\vallerydelexy\LaravelWizard\Test\Stubs\WizardControllerOptionsStub',
             'wizard.no-cache'
         );
 

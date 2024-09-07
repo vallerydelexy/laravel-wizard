@@ -1,13 +1,13 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Unit;
+namespace vallerydelexy\LaravelWizard\Test\Unit;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Ycs77\LaravelWizard\Cache\CachedFile;
-use Ycs77\LaravelWizard\Cache\CachedFileSerializer;
-use Ycs77\LaravelWizard\Test\Concerns\CachedFileTesting;
-use Ycs77\LaravelWizard\Test\TestCase;
+use vallerydelexy\LaravelWizard\Cache\CachedFile;
+use vallerydelexy\LaravelWizard\Cache\CachedFileSerializer;
+use vallerydelexy\LaravelWizard\Test\Concerns\CachedFileTesting;
+use vallerydelexy\LaravelWizard\Test\TestCase;
 
 class CachedFileSerializerTest extends TestCase
 {
@@ -16,7 +16,7 @@ class CachedFileSerializerTest extends TestCase
     /**
      * The cached file serializer instance.
      *
-     * @var \Ycs77\LaravelWizard\Cache\CachedFileSerializer
+     * @var \vallerydelexy\LaravelWizard\Cache\CachedFileSerializer
      */
     protected $serializer;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard;
+namespace vallerydelexy\LaravelWizard;
 
 use Illuminate\Http\Request;
 
@@ -9,7 +9,7 @@ abstract class Step
     /**
      * The wizard instance.
      *
-     * @var \Ycs77\LaravelWizard\Wizard
+     * @var \vallerydelexy\LaravelWizard\Wizard
      */
     protected $wizard;
 
@@ -65,7 +65,7 @@ abstract class Step
     /**
      * Create a new step instance.
      *
-     * @param  \Ycs77\LaravelWizard\Wizard  $wizard
+     * @param  \vallerydelexy\LaravelWizard\Wizard  $wizard
      * @param  int  $index
      * @return void
      */
@@ -142,7 +142,7 @@ abstract class Step
     /**
      * Get the step belongs wizard.
      *
-     * @return \Ycs77\LaravelWizard\Wizard
+     * @return \vallerydelexy\LaravelWizard\Wizard
      */
     public function getWizard()
     {
@@ -152,7 +152,7 @@ abstract class Step
     /**
      * Get the step repository.
      *
-     * @return \Ycs77\LaravelWizard\StepRepository
+     * @return \vallerydelexy\LaravelWizard\StepRepository
      */
     public function getRepo()
     {
@@ -283,7 +283,7 @@ abstract class Step
      * Find step by slug.
      *
      * @param  string  $slug
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function find(string $slug)
     {
@@ -304,7 +304,7 @@ abstract class Step
     /**
      * Get the first step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function first()
     {
@@ -314,7 +314,7 @@ abstract class Step
     /**
      * Get the last step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function last()
     {
@@ -324,7 +324,7 @@ abstract class Step
     /**
      * Get the previous step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function prev()
     {
@@ -334,7 +334,7 @@ abstract class Step
     /**
      * Get the next step.
      *
-     * @return \Ycs77\LaravelWizard\Step|null
+     * @return \vallerydelexy\LaravelWizard\Step|null
      */
     public function next()
     {

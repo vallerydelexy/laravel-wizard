@@ -1,10 +1,10 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Cache;
+namespace vallerydelexy\LaravelWizard\Cache;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Manager;
-use Ycs77\LaravelWizard\Wizard;
+use vallerydelexy\LaravelWizard\Wizard;
 
 class CacheManager extends Manager
 {
@@ -18,7 +18,7 @@ class CacheManager extends Manager
     /**
      * The wizard instance.
      *
-     * @var \Ycs77\LaravelWizard\Wizard
+     * @var \vallerydelexy\LaravelWizard\Wizard
      */
     protected $wizard;
 
@@ -33,7 +33,7 @@ class CacheManager extends Manager
      * Create a new Wizard Cache manager instance.
      *
      * @param  \Illuminate\Foundation\Application  $app
-     * @param  \Ycs77\LaravelWizard\Wizard  $wizard
+     * @param  \vallerydelexy\LaravelWizard\Wizard  $wizard
      * @return void
      */
     public function __construct(Application $app, Wizard $wizard)
@@ -55,7 +55,7 @@ class CacheManager extends Manager
     /**
      * Create an instance of the "session" wizard cache driver.
      *
-     * @return \Ycs77\LaravelWizard\Contracts\CacheStore
+     * @return \vallerydelexy\LaravelWizard\Contracts\CacheStore
      */
     protected function createSessionDriver()
     {
@@ -69,7 +69,7 @@ class CacheManager extends Manager
     /**
      * Create an instance of the "database" wizard cache driver.
      *
-     * @return \Ycs77\LaravelWizard\Contracts\CacheStore
+     * @return \vallerydelexy\LaravelWizard\Contracts\CacheStore
      */
     protected function createDatabaseDriver()
     {

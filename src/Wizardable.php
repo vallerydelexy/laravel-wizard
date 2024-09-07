@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard;
+namespace vallerydelexy\LaravelWizard;
 
 use Closure;
 use Illuminate\Http\Request;
@@ -10,7 +10,7 @@ trait Wizardable
     /**
      * The wizard instance.
      *
-     * @var \Ycs77\LaravelWizard\Wizard
+     * @var \vallerydelexy\LaravelWizard\Wizard
      */
     protected $wizard;
 
@@ -77,7 +77,7 @@ trait Wizardable
      * Render the create view.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Ycs77\LaravelWizard\Step  $step
+     * @param  \vallerydelexy\LaravelWizard\Step  $step
      * @return \Illuminate\Contracts\Support\Renderable|\Illuminate\Contracts\Support\Responsable
      */
     protected function renderCreateView(Request $request, Step $step)
@@ -183,7 +183,7 @@ trait Wizardable
      * Set this step and redirect to this step.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Ycs77\LaravelWizard\Step  $step
+     * @param  \vallerydelexy\LaravelWizard\Step  $step
      * @return \Illuminate\Http\RedirectResponse
      */
     protected function setThisStepAndRedirectTo(Request $request, Step $step)
@@ -314,11 +314,11 @@ trait Wizardable
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  string|null  $slug
-     * @return \Ycs77\LaravelWizard\Step
+     * @return \vallerydelexy\LaravelWizard\Step
      */
     protected function getWizardStep(Request $request, string $slug = null)
     {
-        /** @var \Ycs77\LaravelWizard\Step|null $step */
+        /** @var \vallerydelexy\LaravelWizard\Step|null $step */
         if (isset($slug)) {
             $step = $this->wizard()->stepRepo()->find($slug);
         } else {
@@ -403,7 +403,7 @@ trait Wizardable
      */
     protected function save(Request $request)
     {
-        /** @var \Ycs77\LaravelWizard\Step $step */
+        /** @var \vallerydelexy\LaravelWizard\Step $step */
         foreach ($this->wizard()->stepRepo()->all() as $step) {
             $step->setModel($request);
             $step->saveData($request, $step->data(), $step->getModel());
@@ -418,12 +418,12 @@ trait Wizardable
     /**
      * Get the wizard instance.
      *
-     * @return \Ycs77\LaravelWizard\Wizard
+     * @return \vallerydelexy\LaravelWizard\Wizard
      */
     protected function wizard()
     {
         if (! $this->wizard) {
-            /** @var \Ycs77\LaravelWizard\WizardFactory $factory */
+            /** @var \vallerydelexy\LaravelWizard\WizardFactory $factory */
             $factory = app(WizardFactory::class);
 
             $this->wizard = $factory->make(
@@ -460,7 +460,7 @@ trait Wizardable
     /**
      * Get the wizard options.
      *
-     * Available options reference from Ycs77\LaravelWizard\Wizard::$optionsKeys.
+     * Available options reference from vallerydelexy\LaravelWizard\Wizard::$optionsKeys.
      *
      * @return array
      */
@@ -504,7 +504,7 @@ trait Wizardable
      * On wizard step created event.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Ycs77\LaravelWizard\Step  $step
+     * @param  \vallerydelexy\LaravelWizard\Step  $step
      * @return \Illuminate\Http\RedirectResponse|null
      */
     protected function wizardStepCreated(Request $request, Step $step)
@@ -538,7 +538,7 @@ trait Wizardable
      * On wizard step saved event.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Ycs77\LaravelWizard\Step  $step
+     * @param  \vallerydelexy\LaravelWizard\Step  $step
      * @return \Illuminate\Http\RedirectResponse|null
      */
     protected function wizardStepSaved(Request $request, Step $step)

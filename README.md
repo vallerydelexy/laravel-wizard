@@ -58,7 +58,7 @@ A web setup wizard for Laravel application.
 Install the package via composer:
 
 ```bash
-composer reqre ycs77/laravel-wizard
+composer reqre vallerydelexy/laravel-wizard
 ```
 
 Publish config:
@@ -83,7 +83,7 @@ This command generates the `UserWizardController`, `NameStep`, and `EmailStep` c
 ```php
 use App\Http\Controllers\UserWizardController;
 use Illuminate\Support\Facades\Route;
-use Ycs77\LaravelWizard\Facades\Wizard;
+use vallerydelexy\LaravelWizard\Facades\Wizard;
 
 ...
 
@@ -105,7 +105,7 @@ namespace App\Steps\User;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
-use Ycs77\LaravelWizard\Step;
+use vallerydelexy\LaravelWizard\Step;
 
 class NameStep extends Step
 {
@@ -195,7 +195,7 @@ Next, browse the URL `/wizard/user`, and start to use the Laravel Wizard.
 
 ### 3. Install wizard steps CSS package
 
-The CSS for this package default view is based on the [Bootstrap Steps](https://github.com/ycs77/bootstrap-steps), use NPM installation to use:
+The CSS for this package default view is based on the [Bootstrap Steps](https://github.com/vallerydelexy/bootstrap-steps), use NPM installation to use:
 
 ```bash
 npm install bootstrap bootstrap-steps
@@ -567,15 +567,15 @@ php artisan make:wizard:step NameStep --label="Name" --slug=name --view=steps.us
 
 ## Sponsor
 
-If you think this package has helped you, please consider [Becoming a sponsor](https://www.patreon.com/ycs77) to support my work~ and your avatar will be visible on my major projects.
+If you think this package has helped you, please consider [Becoming a sponsor](https://www.patreon.com/vallerydelexy) to support my work~ and your avatar will be visible on my major projects.
 
 <p align="center">
-  <a href="https://www.patreon.com/ycs77">
-    <img src="https://cdn.jsdelivr.net/gh/ycs77/static/sponsors.svg"/>
+  <a href="https://www.patreon.com/vallerydelexy">
+    <img src="https://cdn.jsdelivr.net/gh/vallerydelexy/static/sponsors.svg"/>
   </a>
 </p>
 
-<a href="https://www.patreon.com/ycs77">
+<a href="https://www.patreon.com/vallerydelexy">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron" />
 </a>
 
@@ -587,13 +587,13 @@ If you think this package has helped you, please consider [Becoming a sponsor](h
 
 [MIT LICENSE](LICENSE)
 
-[ico-version]: https://img.shields.io/packagist/v/ycs77/laravel-wizard?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/vallerydelexy/laravel-wizard?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square
-[ico-github-action]: https://img.shields.io/github/actions/workflow/status/ycs77/laravel-wizard/tests.yml?branch=4.x&label=tests&style=flat-square
+[ico-github-action]: https://img.shields.io/github/actions/workflow/status/vallerydelexy/laravel-wizard/tests.yml?branch=4.x&label=tests&style=flat-square
 [ico-style-ci]: https://github.styleci.io/repos/190876726/shield?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/ycs77/laravel-wizard?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/vallerydelexy/laravel-wizard?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/ycs77/laravel-wizard
-[link-github-action]: https://github.com/ycs77/laravel-wizard/actions/workflows/tests.yml?query=branch%3A4.x
+[link-packagist]: https://packagist.org/packages/vallerydelexy/laravel-wizard
+[link-github-action]: https://github.com/vallerydelexy/laravel-wizard/actions/workflows/tests.yml?query=branch%3A4.x
 [link-style-ci]: https://github.styleci.io/repos/190876726
-[link-downloads]: https://packagist.org/packages/ycs77/laravel-wizard
+[link-downloads]: https://packagist.org/packages/vallerydelexy/laravel-wizard

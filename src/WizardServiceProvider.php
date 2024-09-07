@@ -1,12 +1,12 @@
 <?php
 
-namespace Ycs77\LaravelWizard;
+namespace vallerydelexy\LaravelWizard;
 
 use Illuminate\Support\ServiceProvider;
-use Ycs77\LaravelWizard\Console\StepMakeCommand;
-use Ycs77\LaravelWizard\Console\TableCommand;
-use Ycs77\LaravelWizard\Console\WizardControllerMakeCommand;
-use Ycs77\LaravelWizard\Console\WizardMakeCommand;
+use vallerydelexy\LaravelWizard\Console\StepMakeCommand;
+use vallerydelexy\LaravelWizard\Console\TableCommand;
+use vallerydelexy\LaravelWizard\Console\WizardControllerMakeCommand;
+use vallerydelexy\LaravelWizard\Console\WizardMakeCommand;
 
 class WizardServiceProvider extends ServiceProvider
 {

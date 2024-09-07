@@ -1,12 +1,12 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Cache;
+namespace vallerydelexy\LaravelWizard\Cache;
 
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Support\Arr;
-use Ycs77\LaravelWizard\Contracts\CacheStore;
+use vallerydelexy\LaravelWizard\Contracts\CacheStore;
 
 class DatabaseStore implements CacheStore
 {
@@ -27,7 +27,7 @@ class DatabaseStore implements CacheStore
     /**
      * The cached file serializer instance.
      *
-     * @var \Ycs77\LaravelWizard\Cache\CachedFileSerializer
+     * @var \vallerydelexy\LaravelWizard\Cache\CachedFileSerializer
      */
     protected $serializer;
 
@@ -43,7 +43,7 @@ class DatabaseStore implements CacheStore
      *
      * @param  \Illuminate\Database\ConnectionInterface  $connection
      * @param  string  $table
-     * @param  \Ycs77\LaravelWizard\Cache\CachedFileSerializer  $serializer
+     * @param  \vallerydelexy\LaravelWizard\Cache\CachedFileSerializer  $serializer
      * @param  \Illuminate\Contracts\Container\Container  $container
      * @return void
      */

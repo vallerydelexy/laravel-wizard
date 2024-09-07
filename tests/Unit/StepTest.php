@@ -1,14 +1,14 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Unit;
+namespace vallerydelexy\LaravelWizard\Test\Unit;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Request;
-use Ycs77\LaravelWizard\Test\Stubs\PostStepStub;
-use Ycs77\LaravelWizard\Test\Stubs\StepStub;
-use Ycs77\LaravelWizard\Test\Stubs\UserStepStub;
-use Ycs77\LaravelWizard\Test\TestCase;
-use Ycs77\LaravelWizard\Wizard;
+use vallerydelexy\LaravelWizard\Test\Stubs\PostStepStub;
+use vallerydelexy\LaravelWizard\Test\Stubs\StepStub;
+use vallerydelexy\LaravelWizard\Test\Stubs\UserStepStub;
+use vallerydelexy\LaravelWizard\Test\TestCase;
+use vallerydelexy\LaravelWizard\Wizard;
 
 class StepTest extends TestCase
 {
@@ -17,14 +17,14 @@ class StepTest extends TestCase
     /**
      * The wizard instance.
      *
-     * @var \Ycs77\LaravelWizard\Wizard|\Mockery\MockInterface
+     * @var \vallerydelexy\LaravelWizard\Wizard|\Mockery\MockInterface
      */
     protected $wizard;
 
     /**
      * The wizard step instance.
      *
-     * @var \Ycs77\LaravelWizard\Step|\Mockery\MockInterface
+     * @var \vallerydelexy\LaravelWizard\Step|\Mockery\MockInterface
      */
     protected $step;
 

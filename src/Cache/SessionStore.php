@@ -1,10 +1,10 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Cache;
+namespace vallerydelexy\LaravelWizard\Cache;
 
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Support\Arr;
-use Ycs77\LaravelWizard\Contracts\CacheStore;
+use vallerydelexy\LaravelWizard\Contracts\CacheStore;
 
 class SessionStore implements CacheStore
 {
@@ -18,7 +18,7 @@ class SessionStore implements CacheStore
     /**
      * The cached file serializer instance.
      *
-     * @var \Ycs77\LaravelWizard\Cache\CachedFileSerializer
+     * @var \vallerydelexy\LaravelWizard\Cache\CachedFileSerializer
      */
     protected $serializer;
 
@@ -33,7 +33,7 @@ class SessionStore implements CacheStore
      * Create a new wizard cache session store instance.
      *
      * @param  \Illuminate\Contracts\Session\Session  $session
-     * @param  \Ycs77\LaravelWizard\Cache\CachedFileSerializer  $serializer
+     * @param  \vallerydelexy\LaravelWizard\Cache\CachedFileSerializer  $serializer
      * @param  string  $wizardKey
      * @return void
      */

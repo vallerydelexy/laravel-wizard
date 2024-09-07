@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Stubs;
+namespace vallerydelexy\LaravelWizard\Test\Stubs;
 
 class UserSkipStepStub extends UserStepStub
 {

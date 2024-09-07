@@ -1,10 +1,10 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Test\Stubs;
+namespace vallerydelexy\LaravelWizard\Test\Stubs;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
-use Ycs77\LaravelWizard\Step;
+use vallerydelexy\LaravelWizard\Step;
 
 class UserStepStub extends Step
 {

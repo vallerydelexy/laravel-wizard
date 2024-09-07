@@ -1,6 +1,6 @@
 <?php
 
-namespace Ycs77\LaravelWizard\Cache;
+namespace vallerydelexy\LaravelWizard\Cache;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

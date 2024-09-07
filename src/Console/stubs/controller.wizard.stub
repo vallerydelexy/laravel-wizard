@@ -4,7 +4,7 @@ namespace DummyNamespace;
 
 use DummyRootNamespaceHttp\Controllers\Controller;
 DummyFullStepsClasses
-use Ycs77\LaravelWizard\Wizardable;
+use vallerydelexy\LaravelWizard\Wizardable;
 
 class DummyClass extends Controller
 {
