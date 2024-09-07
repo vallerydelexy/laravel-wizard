@@ -101,6 +101,13 @@ trait Wizardable
 
         $step = $this->getWizardStep($request, $step);
 
+        // If trigger from 'back', set this step index and redirect to prev step.
+        if ($request->query('_trigger') === 'back' && $this->beforeBackWizardStep($request)) {
+            $prevStep = $this->wizard()->stepRepo()->prev();
+
+            return $this->setThisStepAndRedirectTo($request, $prevStep);
+        }
+
         if ($step->skip() && $request->query('_trigger') === 'skip') {
             if ($this->wizard()->option('cache')) {
                 $step->cacheProgress($request);
@@ -129,12 +136,7 @@ trait Wizardable
                 return $redirectTo;
             }
 
-            // If trigger from 'back', set this step index and redirect to prev step.
-            if ($request->query('_trigger') === 'back' && $this->beforeBackWizardStep($request)) {
-                $prevStep = $this->wizard()->stepRepo()->prev();
-
-                return $this->setThisStepAndRedirectTo($request, $prevStep);
-            }
+            
         }
 
         if ($this->isLastStep()) {
